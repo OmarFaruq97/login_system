@@ -16,8 +16,8 @@ public record RegisterRequest(
         @Size(min = 5, message = "Password must be at least 5 characters")
         String password,
 
-        @ValidRole(message = "Role must be valid")
-        Role role,
+
+        String role,
 
         String firstName,
         String lastName,

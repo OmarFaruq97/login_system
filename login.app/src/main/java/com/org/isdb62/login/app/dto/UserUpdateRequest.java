@@ -8,7 +8,7 @@ public record UserUpdateRequest(
         @Email(message = "Email should be valid")
         String email,
 
-        Role role,
+        String role,
         String firstName,
         String lastName,
         String phoneNumber

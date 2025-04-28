@@ -85,6 +85,7 @@ public class UserController {
             userDetails.setFirstName(userUpdateRequest.firstName());
             userDetails.setLastName(userUpdateRequest.lastName());
             userDetails.setEmail(userUpdateRequest.email());
+
             userDetails.setPhoneNumber(userUpdateRequest.phoneNumber());
 
             // Only admin can update roles

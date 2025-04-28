@@ -19,8 +19,7 @@ public record UserCreateRequest(
         @Size(min = 6, message = "Password must be at least 6 characters")
         String password,
 
-        @NotNull(message = "Role cannot be null")
-        Role role,
+        String role,
 
         String firstName,
         String lastName,

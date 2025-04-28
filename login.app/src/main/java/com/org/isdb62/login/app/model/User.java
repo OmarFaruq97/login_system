@@ -29,9 +29,9 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Role role;
+
+
+    private String role;
 
     private String firstName;
     private String lastName;
@@ -43,7 +43,7 @@ public class User {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    public User(String email, String password, Role role, String firstName, String lastName, String phoneNumber) {
+    public User(String email, String password, String role, String firstName, String lastName, String phoneNumber) {
         this.email = email;
         this.password = password;
         this.role = role;
